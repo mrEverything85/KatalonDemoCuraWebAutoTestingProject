@@ -15,7 +15,6 @@ def driver():
     driver.quit()
 
 def test_make_appointment(driver):
-    driver.get("https://katalon-demo-cura.herokuapp.com/")
 
     # Click "Make Appointment" button
     WebDriverWait(driver, 10).until(

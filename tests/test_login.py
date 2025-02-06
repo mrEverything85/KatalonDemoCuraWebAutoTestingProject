@@ -15,7 +15,6 @@ def driver():
 
 
 def test_login(driver):
-    driver.get("https://katalon-demo-cura.herokuapp.com/")
 
     # Chờ và click 'Make Appointment'
     make_appointment_btn = WebDriverWait(driver, 15).until(
