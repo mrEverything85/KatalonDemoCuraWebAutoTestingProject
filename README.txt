@@ -33,14 +33,24 @@ Project Structure:
 
 Running Tests:
 --------------
-To execute all test cases, run:
+To execute all test cases:
 ```
+OPTION 1: use cmd to run all the test script in the tests folder and export the result to a html file
 pytest tests/ -v --html=report.html --self-contained-html
 ```
 
+```
+OPTION 2: use shift+f10 in Pycharm for each script
+```
+
+NOTE: if you use option 1, it's ok to place the conftest.py outside the tests folder. But in the option 2, you have to
+put the script in the tests folder, otherwise it'll be fail (because PyCharm run config working inventory only in the
+tests folder, it wont find the conftest.py outside). So i'd recommend using option 1.
+
 Test Report:
 ------------
-After running the tests, an HTML report will be generated as `report.html`. Open it in a web browser to view detailed results.
+After running the tests, an HTML report will be generated as `report.html`.
+Open it in a web browser to view detailed results.
 
 Author:
 -------
