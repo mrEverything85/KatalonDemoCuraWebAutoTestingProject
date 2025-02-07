@@ -38,12 +38,6 @@ To execute all test cases, run:
 pytest tests/ -v --html=report.html --self-contained-html
 ```
 
-To run tests on a specific browser, use:
-```
-pytest tests/ -v --browser chrome
-pytest tests/ -v --browser edge
-```
-
 Test Report:
 ------------
 After running the tests, an HTML report will be generated as `report.html`. Open it in a web browser to view detailed results.
