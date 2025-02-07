@@ -6,18 +6,12 @@ from selenium.webdriver.support import expected_conditions as EC
 from pages.login_page import LoginPage
 from pages.appointment_page import AppointmentPage
 
-@pytest.fixture
-def driver():
-    driver = webdriver.Edge()
-    driver.maximize_window()
-    driver.get("https://katalon-demo-cura.herokuapp.com/")
-    yield driver
-    driver.quit()
 
 def test_make_appointment(driver):
+    driver.get("https://katalon-demo-cura.herokuapp.com/")
 
     # Click "Make Appointment" button
-    WebDriverWait(driver, 10).until(
+    WebDriverWait(driver, 15).until(
         EC.element_to_be_clickable((By.ID, "btn-make-appointment"))
     ).click()
 
